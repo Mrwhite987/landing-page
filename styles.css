@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.hero {
+  display: flex;
+  padding: 0 12%;
+  background-color: #1f2937;
+  flex-direction: column;
+}
+
+.header,
+.intro {
+  display: flex;
+  color: #e5e7eb;
+  align-items: center;
+}
+.hero > .intro {
+  padding: 5% 0 5% 0;
+  justify-content: space-evenly;
+  max-height: 80vh;
+  gap: 5%;
+}
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-self: stretch;
+  gap: 5px;
+  flex: 1.5 1 0;
+}
+
+.intro-text > h1 {
+  font-size: 48px;
+  color: #f9faf8;
+  font-weight: 900;
+}
+
+.intro-text > p {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.intro > img {
+  flex: 1;
+  max-width: 50%; /* Or another percentage that fits your design */
+  object-fit: contain;
+}
+
+.header > ul {
+  display: flex;
+  margin-left: auto;
+  gap: 24px;
+}
+
+button {
+  background-color: #3882f6;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  width: 100px;
+}
