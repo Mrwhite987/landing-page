@@ -16,6 +16,11 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .hero {
   display: flex;
   padding: 0 12%;
@@ -67,10 +72,68 @@ li {
   gap: 24px;
 }
 
-button {
+.intro button {
   background-color: #3882f6;
   border-radius: 10px;
   padding: 10px;
   color: white;
   width: 100px;
+}
+
+/* Styles for infor part */
+.infor {
+  display: flex;
+  flex-direction: column;
+  padding: 0 12%;
+}
+
+.infor > h1 {
+  padding: 20px;
+  text-align: center;
+  color: #1f2937;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5px;
+  min-height: 40vh;
+}
+
+.img-txt > img {
+  border-radius: 10px;
+  border: 2px solid #3b82f6;
+}
+
+.img-txt > p {
+  height: 25vh;
+  max-width: 80%;
+  text-align: center;
+}
+
+/* Styles for quote section */
+.quote {
+  background-color: #e5e7eb;
+  font-size: 36px;
+  color: #1f2937;
+  padding: 8% 12%;
+}
+.words {
+  font-style: italic;
+  font-weight: 50;
+  margin-bottom: 2%;
+}
+.author {
+  text-align: right;
+  font-weight: bold;
 }
