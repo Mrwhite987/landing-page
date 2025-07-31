@@ -37,13 +37,14 @@ a {
 .hero > .intro {
   padding: 5% 0 5% 0;
   justify-content: space-evenly;
-  max-height: 80vh;
+  max-height: 60vh;
   gap: 5%;
 }
+
 .intro-text {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-self: stretch;
   gap: 5px;
   flex: 1.5 1 0;
@@ -53,11 +54,14 @@ a {
   font-size: 48px;
   color: #f9faf8;
   font-weight: 900;
+  flex: 1;
 }
 
 .intro-text > p {
   font-size: 18px;
   color: #e5e7eb;
+  line-height: 1.5;
+  flex: 1;
 }
 
 .intro > img {
@@ -116,9 +120,10 @@ a {
 }
 
 .img-txt > p {
-  height: 25vh;
+  min-height: 25vh;
   max-width: 80%;
   text-align: center;
+  line-height: 1.5;
 }
 
 /* Styles for quote section */
@@ -136,4 +141,50 @@ a {
 .author {
   text-align: right;
   font-weight: bold;
+}
+
+/* Styles for footer */
+.consult {
+  /* display: flex; */
+  padding: 5% 20%;
+}
+
+.container {
+  padding: 3% 10%;
+  background-color: #3882f6;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.consult > button {
+  background-color: #3882f6;
+}
+
+.consult .slogan {
+  color: #f9faf8;
+  font-size: 20px;
+}
+
+.consult .contact {
+  color: #e5e7eb;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.consult button {
+  background-color: #3882f6;
+  border: 2px solid #f9faf8;
+  padding: 5px 20px;
+  border-radius: 10px;
+  color: #f9faf8;
+  font-size: 15px;
+}
+
+/* Styles for footer */
+
+.footer {
+  background-color: #1f2937;
+  color: #e5e7eb;
+  text-align: center;
+  padding: 30px 0;
 }
